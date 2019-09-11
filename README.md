@@ -1,2 +1,2 @@
-<h1>Christian</h1>
-<p>this is a test</p>
+<h1>This is repo for the challenges of Mobile Application Development class</h1>
+<p>By Christian Sanabria</p>
