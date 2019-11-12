@@ -1,0 +1,26 @@
+<resources>
+    <string name="number_one">number_one</string>
+    <string name="number_three">number_three</string>
+    <string name="number_two">number_two</string>
+    <string name="number_four">number_four</string>
+    <string name="number_five">number_five</string>
+    <string name="number_six">number_five</string>
+    <string name="number_seven">number_five</string>
+    <string name="number_eight">number_five</string>
+    <string name="number_nine">number_five</string>
+    <string name="app_name">Tic-Tac-Toe-Avengers</string>
+    <string name="first_human">You go first.</string>
+    <string name="turn_human">Your turn.</string>
+    <string name="turn_computer">Computer\'s turn.</string>
+    <string name="result_tie">It\'s a tie.</string>
+    <string name="result_human_wins">You won!</string>
+    <string name="result_computer_wins">Computer won!</string>
+    <string name="difficulty_choose">Choose a difficulty level:</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_harder">Harder</string>
+    <string name="difficulty_expert">Expert</string>
+    <string name="quit_question">Are you sure you want to quit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="info">information</string>
+</resources>
