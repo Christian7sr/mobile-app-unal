@@ -4,181 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6E43A0"
+    android:background="#001724"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="366dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/summary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/board"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/editText">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3">
+        <TableRow android:gravity="center_horizontal">
 
-            <Button
-                android:id="@+id/one"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#B4009B77"
-                android:text="1"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/human_won_t"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#00FFC4"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Human: "
+                android:textSize="20sp" />
 
-            <Space
-                android:layout_width="22dp"
-                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/human_won"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#00FFC4"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/two"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#B4009B77"
-                android:text="2"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/finish_tie_t"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#00FFC4"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Ties: "
+                android:textSize="20sp" />
 
-            <Space
-                android:layout_width="22dp"
-                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/finish_tie"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#00FFC4"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/three"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#B4009B77"
-                android:text="3"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/android_won_t"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#00FFC4"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Computer: "
+                android:textSize="20sp" />
 
-        </TableRow>
-
-        <Space
-            android:layout_width="24dp"
-            android:layout_height="24dp" />
-
-        <TableRow
-            android:layout_width="362dp"
-            android:layout_height="222dp"
-            android:layout_weight="3">
-
-            <Button
-                android:id="@+id/four"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#B4009B77"
-                android:text="4"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
-
-            <Space
-                android:layout_width="22dp"
-                android:layout_height="match_parent" />
-
-            <Button
-                android:id="@+id/five"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#B4009B77"
-                android:text="5"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <Button
-                android:id="@+id/six"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#B4009B77"
-                android:text="6"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/android_won"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#00FFC4"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="20sp" />
 
         </TableRow>
-
-        <Space
-            android:layout_width="24dp"
-            android:layout_height="24dp" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_weight="3">
-
-            <Button
-                android:id="@+id/seven"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#B4009B77"
-                android:text="7"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <Button
-                android:id="@+id/eight"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#B4009B77"
-                android:text="8"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
-
-            <Space
-                android:layout_width="22dp"
-                android:layout_height="match_parent" />
-
-            <Button
-                android:id="@+id/nine"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#B4009B77"
-                android:text="9"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
-
-        </TableRow>
-
     </TableLayout>
+
+    <co.edu.unal.tictactoecivilwar.BoardView
+        android:id="@+id/board"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <TextView
         android:id="@+id/information"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="info"
+        android:text="@string/info"
         android:textColor="#00FFC4"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/board" />
 
     <TextView
         android:id="@+id/editText"
@@ -192,7 +128,7 @@
         android:text="@string/app_name"
         android:textColor="#00FFC4"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintBottom_toTopOf="@+id/board"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
